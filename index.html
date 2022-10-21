@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Back Ground Changer</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <div id="color-switcher">
+      <span class="btn" id="white" onclick="changeBG('#ffffff')"></span>
+      <span class="btn" id="aqua" onclick="changeBG('#7fffd4')"></span>
+      <span class="btn" id="violet" onclick="changeBG('#ce9aff')"></span>
+      <span class="btn" id="black" onclick="changeBG('#000000')"></span>
+    </div>
+
+    <h1 class="text">About Us</h1>
+    <img src="img/jean-philippe-delberghe-T5BF4OyQLwU-unsplash 1.png" />
+
+    <p class="text">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam impedit,
+      quas aut non mollitia iste, amet quasi unde quibusdam labore nostrum
+      asperiores ipsum doloremque, nam corporis. Tenetur debitis delectus
+      quibusdam dignissimos architecto asperiores esse odio dolor, ipsum quis
+      qui nulla nobis laboriosam accusantium voluptate sequi eos? Delectus ea
+      rerum optio laborum! Laudantium doloremque ipsa repudiandae qui, magnam
+      nobis odit a quae architecto deserunt facilis! Libero non, velit nobis
+      obcaecati doloremque odio quod earum. Voluptatum mollitia esse nihil
+      maxime nisi possimus dolor cumque! Numquam fugiat quae excepturi corrupti
+      nemo cupiditate ullam, quos a aliquam totam perspiciatis impedit sint
+      voluptas? Natus quasi, illo voluptatem expedita velit ducimus perferendis
+      quis iste magnam! Facilis aliquid exercitationem natus tenetur! Inventore
+      similique rem sequi ea officiis iure ullam autem dolore earum pariatur a
+      cupiditate totam, maiores ex? Illum delectus mollitia ab praesentium eaque
+      nam ipsum odio sed harum ipsa dignissimos veritatis consequatur sunt rerum
+      doloribus blanditiis placeat in a neque voluptatem quas, molestias omnis?
+      Tempora quibusdam, autem aut sed commodi quidem fugiat itaque! Beatae
+      voluptas deserunt odio tenetur odit iusto in corrupti, nobis aperiam
+      aliquid voluptates deleniti neque velit vel mollitia porro ut ab nesciunt
+      eum, soluta doloribus. Sequi placeat ex id excepturi iusto dolor numquam
+      incidunt quos perferendis doloremque, qui fuga et provident nam dolores,
+      alias veritatis ducimus adipisci aut eveniet error at enim in natus!
+      Facere, asperiores. Itaque porro fugit voluptatem repudiandae unde
+      molestias obcaecati corrupti sed sint, eaque corporis velit quaerat optio,
+      possimus aliquid laboriosam fugiat voluptate aliquam accusantium ab
+      laborum ipsa! Hic laborum error nobis eius mollitia itaque illo odit
+      officiis tempore in esse dolorum veritatis vero accusantium accusamus
+      distinctio necessitatibus voluptatem ea, sed recusandae aut. Aperiam
+      perspiciatis aspernatur iusto dolorum dolores eveniet quisquam similique
+      saepe optio dolor quis assumenda nulla ea laborum eligendi numquam neque,
+      commodi omnis harum alias minima possimus.
+    </p>
+    <script>
+      function changeBG(color) {
+        document.body.style.backgroundColor = color
+        let txt = document.getElementsByClassName('text')
+        if (color == '#000000') {
+          for (let elm of txt) {
+            elm.style.color = 'white'
+          }
+        } else {
+          for (let elm of txt) {
+            elm.style.color = 'black'
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

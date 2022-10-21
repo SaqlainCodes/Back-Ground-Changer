@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    text-align: center;
+    text-decoration: underline;
+}
+img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+p{
+    font-size: 18px;
+    text-align: justify;
+    
+}
+.btn{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border: solid red;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#color-switcher{
+    text-align: right;
+}
+
+#white{
+ background-color: white;
+}
+
+#aqua{
+ background-color: aqua;
+}
+
+#violet{
+ background-color:violet;
+}
+
+#black{
+ background-color: black;
+}
